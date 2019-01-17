@@ -7,3 +7,22 @@
 	justify-content: @justify;
 	align-items: @align;
   }
+
+.button-mixin(@fontsize; @border-rad) {
+    color: @main-bg;
+    font-size: @fontsize;
+    text-align: center;
+    background-color: @button-bg;
+    width: 83%;
+    height: 45px;
+    padding: 14px 0;
+    cursor: pointer;
+    border-radius: @border-rad;
+    &:hover {
+        background-color: @main-bg;
+        color: @button-bg;
+        border: 2px solid @button-bg;
+    }
+}
+//font-size: 1.8rem;
+//border-radius: 15px;

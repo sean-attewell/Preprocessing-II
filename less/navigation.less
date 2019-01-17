@@ -8,15 +8,28 @@ header {
         .flex-mixin(row, space-between, center);
         margin: 0 auto;
         max-width: 800px;
+        width: 93%;
         margin-top: 24px;
+        @media @mobile {
+            .flex-mixin(column, space-between, center);
+        }
+        h1 {
+            @media @mobile {
+                padding-bottom: 10px;
+            }
+        }
         nav {
             .flex-mixin(row, flex-end, center);
-            width: 50%;
+            width: 65%;
+            @media @mobile {
+                width: 100%;
+                .flex-mixin(row, space-around, center);
+            }
             a {
                 text-decoration: none;
                 color: @font-color;
                 font-size: 1.6rem;
-                margin-right: 7.7%;
+                margin-right: 5.9%;
             }
         }
     }

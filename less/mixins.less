@@ -8,16 +8,16 @@
 	align-items: @align;
   }
 
-.button-mixin(@fontsize; @border-rad) {
+.button-mixin(@fontsize; @width) {
     color: @main-bg;
     font-size: @fontsize;
     text-align: center;
     background-color: @button-bg;
-    width: 83%;
+    width: @width;
     height: 45px;
     padding: 14px 0;
     cursor: pointer;
-    border-radius: @border-rad;
+    border-radius: 15px;
     &:hover {
         background-color: @main-bg;
         color: @button-bg;
